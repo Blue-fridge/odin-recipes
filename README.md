@@ -1,1 +1,1 @@
-# odin-recipes
+A website with random recipes i found on https://www.allrecipes.com/
