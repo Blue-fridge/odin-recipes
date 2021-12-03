@@ -1,0 +1,96 @@
+body{
+    background: linear-gradient(45deg, black, gray, black);
+    position: relative;
+
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.recipe-block1, .recipe-block2, .recipe-block3{
+    width: 300px;
+    float: left;
+    text-align: center;
+}
+.recipe-block1{
+    border-radius: 10px 0px 0px 10px;
+}
+.recipe-block3{
+    border-radius: 0px 10px 10px 0px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+}
+.options{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+span{
+    
+    font-size: 25px;
+    color: white;
+}
+.recipe-block1:hover{
+    transform: scale(1.1);
+}
+.recipe-block2:hover{
+    transform: scale(1.1);
+}
+.recipe-block3:hover{
+    transform: scale(1.1);
+}
+.recipe-block1, .recipe-block2, .recipe-block3{
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out
+}
+/*//animations//*/
+h1{
+    position: relative;
+    animation-name: arrive-h1;
+    animation-duration: 2s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+.recipe-block1, .link-text1{
+    position: relative;
+    animation-name: arrive-left;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+.recipe-block2, .link-text2{
+    position: relative;
+    animation-name: arrive-top;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+.recipe-block3, .link-text3{
+    position: relative;
+    animation-name: arrive-right;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+/*//keyframes//*/
+@keyframes arrive-left{
+    0% {left: -300px}
+    50% {left: 0px}
+    100% {left: 0px}
+}
+@keyframes arrive-right{
+    0% {right: -300px}
+    50% {right: 0px}
+    100% {right: 0px}
+}
+@keyframes arrive-top{
+    0% {top: -300px}
+    50% {top: 0px}
+    100% {top: 0px}
+}
+@keyframes arrive-h1{
+    0% {top: -600px}
+    50% {top: 2px}
+    100% {top: 0px}
+}
