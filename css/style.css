@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(45deg, black, gray, black);
+    background: linear-gradient(60deg,  gray, orange);
     position: relative;
 
 }
@@ -23,74 +23,77 @@ a{
     text-decoration: none;
     font-size: 25px;
 }
+/*//position//*/
 .options{
     position: absolute;
     top: 30%;
     left: 15%;
 }
 span{
-    
     font-size: 25px;
     color: white;
 }
+/*//hover//*/
 .recipe-block1:hover{
-    transform: scale(1.1);
+    width: 380px;
 }
 .recipe-block2:hover{
-    transform: scale(1.1);
+    width: 360px;
 }
 .recipe-block3:hover{
-    transform: scale(1.1);
+    width: 360px;
 }
 .recipe-block1, .recipe-block2, .recipe-block3{
     transition-duration: 0.7s;
-    transition-timing-function: ease-in-out
+    transition-timing-function: ease-in-out;
 }
 /*//animations//*/
 h1{
     position: relative;
+    top: -300px;
     animation-name: arrive-h1;
     animation-duration: 2s;
-    animation-duration: 5s;
+    animation-delay: 1.3s;
     animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 .recipe-block1, .link-text1{
     position: relative;
     animation-name: arrive-left;
     animation-duration: 3s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-out;
 }
 .recipe-block2, .link-text2{
     position: relative;
     animation-name: arrive-top;
     animation-duration: 3s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-out;
 }
 .recipe-block3, .link-text3{
     position: relative;
     animation-name: arrive-right;
     animation-duration: 3s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-out;
 }
 
 /*//keyframes//*/
 @keyframes arrive-left{
-    0% {left: -300px}
-    50% {left: 0px}
-    100% {left: 0px}
+    0% {left: -300px; opacity: 0}
+    50% {left: 0px; opacity: 0.5}
+    100% {left: 0px; opacity: 1}
 }
 @keyframes arrive-right{
-    0% {right: -300px}
-    50% {right: 0px}
-    100% {right: 0px}
+    0% {right: -300px; opacity: 0}
+    50% {right: 0px; opacity: 0.5}
+    100% {right: 0px; opacity: 1}
 }
 @keyframes arrive-top{
-    0% {top: -300px}
-    50% {top: 0px}
-    100% {top: 0px}
+    0% {top: -300px; opacity: 0}
+    50% {top: 0px; opacity: 0.5}
+    100% {top: 0px; opacity: 1}
 }
 @keyframes arrive-h1{
-    0% {top: -600px}
-    50% {top: 2px}
-    100% {top: 0px}
+    0% {top: px}
+    50% {top: 5px}
+    100% {top: 10px}
 }
