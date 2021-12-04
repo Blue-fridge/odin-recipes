@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    background-color: rgba(255, 166, 0, .3);
+}
+
+#recipe{
+    position: absolute;
+    left: 25%;
+    width: 600px;
+    margin: 15px;
+}
+h1{
+    margin: 10px;
+    text-align: center;
+    color: orange;
+}
+h2{
+    margin: 10px;
+    margin-left: 0px;
+    color: orange;
+}
+.description{
+    text-align: justify;
+    margin-left: 10px;
+}
+.ingredient h3{
+    margin: 10px;
+    margin-left: 0px;
+    color: orange;
+}
+.ingredient ul{
+    list-style-type: none;
+    margin: 10px;
+}
+.steps{
+    margin-top: 10px;
+    text-align: justify;
+}
+.steps ol{
+    list-style-type: none;
+    margin: 10px;
+}
+.steps h4{
+    font-size: larger;
+    color: orange;
+}
+.steps h5{
+    font-size: large;
+    color: orange;
+}
+.steps p{
+    margin: 10px;
+    margin-left: 20px;
+}
+a{
+    position: absolute;
+    bottom: 70%;
+    text-decoration: none;
+    background: orange;
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+}
+a:hover{
+    transform: scale(1.2);
+}
