@@ -1,7 +1,7 @@
 body{
     background: linear-gradient(60deg,  gray, orange);
     position: relative;
-
+    font-family: 'Lora', serif;
 }
 h1{
     text-align: center;

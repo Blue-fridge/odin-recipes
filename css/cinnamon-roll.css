@@ -4,7 +4,7 @@
 }
 body{
     position: relative;
-    background-color: rgba(255, 166, 0, .3);
+    background-color: rgb(165, 42, 42);
     font-family: 'Lora', serif;
 }
 
@@ -16,7 +16,8 @@ body{
     animation-name: appear;
     animation-duration: 1s;
     animation-timing-function: ease-in;
-    
+    border: 1px solid orange;
+    padding: 5px;
 }
 h1{
     margin: 10px;
@@ -50,8 +51,11 @@ h2{
     list-style-type: none;
     margin: 10px;
 }
+.steps h3{
+    color: orange;
+}
 .steps h4{
-    font-size: larger;
+    font-size: medium;
     color: orange;
 }
 .steps h5{
@@ -64,7 +68,8 @@ h2{
 }
 a{
     position: absolute;
-    bottom: 77%;
+    top: 60%;
+    left: 26.1%;
     text-decoration: none;
     background: orange;
     color: white;
